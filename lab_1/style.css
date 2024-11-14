@@ -8,7 +8,6 @@ body {
     padding: 20px;
 }
 
-/* Заголовки */
 h1 {
     font-size: 2.5em;
     color: #ff6b6b;
@@ -55,7 +54,6 @@ a:hover {
 
 img {
     display: block;
-    max-width: 300px; 
     border-radius: 50%; 
     margin: 30px left; 
     border: 1px solid #feca57; 
