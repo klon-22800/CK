@@ -205,12 +205,13 @@ export namespace Transport {
             this._owner = value;
         }
 
-        printVehicleInfo(): void {
-            console.log(`Марка: ${this._brand}`);
-            console.log(`Модель: ${this._model}`);
-            console.log(`Год выпуска: ${this._year}`);
-            console.log(`VIN-номер: ${this._vin}`);
-            console.log(`Регистрационный номер: ${this._registrationNumber}`);
+        printVehicleInfo(): string {
+            // console.log(`Марка: ${this._brand}`);
+            // console.log(`Модель: ${this._model}`);
+            // console.log(`Год выпуска: ${this._year}`);
+            // console.log(`VIN-номер: ${this._vin}`);
+            // console.log(`Регистрационный номер: ${this._registrationNumber}`);
+            return `Марка: ${this.brand}, Модель: ${this.model}, Год выпуска: ${this.year}, VIN-номер: ${this.vin}, Регистрационный номер: ${this.registrationNumber}`;
         }
     }
 
@@ -280,7 +281,8 @@ export namespace Transport {
 
         @uppercaseMethod
         printVehicleInfo(): string {
-            return `Тип кузова: ${this._bodyType}, Класс автомобиля: ${this._carType}`;
+            let vehicleInf0 = super.printVehicleInfo();
+            return vehicleInf0 + `Тип кузова: ${this._bodyType}, Класс автомобиля: ${this._carType}`;
         }
     }
 
@@ -324,10 +326,9 @@ export namespace Transport {
             this._isSport = value;
         }
 
-        printVehicleInfo(): void {
-            super.printVehicleInfo();
-            console.log(`Тип рамы: ${this._frameType}`);
-            console.log(`Для спорта: ${this._isSport ? 'Да' : 'Нет'}`);
+        printVehicleInfo(): string {
+            let vehicleInf0 = super.printVehicleInfo();
+            return vehicleInf0 + `Тип рамы: ${this._frameType}` + `Для спорта: ${this._isSport ? 'Да' : 'Нет'}`;
         }
     }
 
