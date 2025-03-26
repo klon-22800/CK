@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "data": {
+        "name": "Tesla Model S",
+        "type": "Электромобиль",
+        "specifications": {
+          "horsepower": 1020,
+          "range_km": 652,
+          "autopilot": true
+        },
+        "features": ["Автопилот", "Электродвигатель", "Сенсорный экран"],
+        "rating": 4.8
+      }
+    },
+    {
+      "id": 2,
+      "data": {
+        "name": "BMW M5",
+        "type": "Спортивный седан",
+        "specifications": {
+          "horsepower": 625,
+          "range_km": 450,
+          "autopilot": false
+        },
+        "features": ["V8 двигатель", "Полный привод", "Спортивная подвеска"],
+        "rating": 4.7
+      }
+    },
+    {
+      "id": 3,
+      "data": {
+        "name": "Toyota Land Cruiser",
+        "type": "Внедорожник",
+        "specifications": {
+          "horsepower": 409,
+          "range_km": 600,
+          "autopilot": false
+        },
+        "features": ["Полный привод", "Дизельный двигатель", "Усиленная подвеска"],
+        "rating": 4.6
+      }
+    }
+  ]
+  
