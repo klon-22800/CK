@@ -1,1 +1,8 @@
-<app-greeting></app-greeting>
+<h3>Навигационная панель</h3>
+<div>
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Главная страница</a>
+    <a routerLink="/page1">Страница 1</a>
+    <a routerLink="/page2">Страница 2</a>
+    <a routerLink="/page3">Страница 3</a>
+</div>
+<router-outlet></router-outlet>
