@@ -6,7 +6,7 @@ import { Page3Component } from './page3/page3.component';
 
 export const routes: Routes = [
     {path:"", component: GreetingComponent},
-    {path:"page1", component: Page1Component},
+    {path:"page1/:id", component: Page1Component},
     {path:"page2", component: Page2Component},
     {path:"page3", component: Page3Component}
 ];
